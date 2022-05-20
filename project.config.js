@@ -1,12 +1,12 @@
 module.exports = {
-  name: 'crumbs-canvas',
+  name: "crumbs-canvas",
   pages: [
     // if making a multipage
     // static site, add your pages here
     {
-      title: 'index',
-      filename: 'index.html',
-      template: './src/views/index.html',
+      title: "crumbs-canvas",
+      filename: "index.html",
+      template: "./src/views/index.html",
     },
   ],
 };
