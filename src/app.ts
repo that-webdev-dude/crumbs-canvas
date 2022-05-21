@@ -4,7 +4,7 @@ export default () => {
   if (ctx?.canvas.height) ctx.canvas.height = 600;
   if (ctx?.canvas.width) ctx.canvas.width = 800;
   if (ctx?.globalAlpha) ctx.globalAlpha = 0.025
-  if (ctx?.fillStyle) ctx.fillStyle = 'black'
+  if (ctx?.fillStyle) ctx.fillStyle = '#151515'
 
   let loop = (timestamp: number) => {
     requestAnimationFrame(loop)
@@ -17,7 +17,7 @@ export default () => {
       ctx.globalAlpha = 1;
       const x = Math.floor(Math.random() * w);
       const y = Math.floor(Math.random() * h);
-      const size = Math.floor(Math.random() * 5);
+      const size = Math.floor(Math.random() * 25);
       ctx.beginPath();
       ctx.arc(x, y, size, 0, Math.PI * 2, false);
       ctx.fill();
